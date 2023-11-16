@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        a{
+            color: rgba(255, 255, 255, 0.637);
+        }
+        a:hover{
+            color: #186F65;
+            cursor: pointer;
+        }
+
+        .navbar{
+            background-color: #82828225;
+            padding: 20px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; justify-content: space-between; align-items: center;
+        }
+       
+       .card-head{
+   
+        position: absolute; top: 55%; left: 100px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        justify-items: center;
+       }
+      .card-head h1{
+        font-size: 24px; font-weight: bold; color: white; 
+      }
+      .card-head-2{
+      
+   
+        position: relative; top: 55%; left: 100px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        justify-items: center;
+        position: absolute; top: 65%; left: 100px;
+       }
+
+     .card-head-2 p{
+        font-size: 26px;  color: white;
+     }
+     .sec-tentang{
+        display: flex;
+        width: 800px;
+       
+     margin: auto;
+         padding: 18px; border-radius: 20px;
+     }
+     .container-img-tg{
+        display: flex;
+       width: 60%;
+     }
+     .container-txt-tg{
+        width: 40%;
+     }
+     .container-kg{
+        width: 70%;
+        margin: 60px auto 60px auto;
+       justify-content: center;
+        
+     }
+     .card-kg{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: #186F65;
+        background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  display: flex;
+  align-items: center;
+margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+     }
+     .card-kg h1{
+        font-size: 28px;
+        margin-top: 20px;
+        color: white;
+       text-shadow: 2px 2px black;
+     }
+     table, th, td {
+  border: 1px solid black;
+}
+.container-form{
+    width: 300px;
+    height: 300px;
+    background-color: #308177;
+    border-radius: 20px;
+    padding: 20px;
+    margin:20px auto 20px auto;
+align-items: center;
+}
+.container-form h1{
+    color: white;
+    font-size: 20px;
+}
+.container-form form input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow:  2px black;
+    margin-bottom: 14px;
+}
+.container-form form label{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-kirim{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    color: #186F65;
+}
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: sans-serif;">
+    <div>
+        <nav id="navbar" class="navbar" >
+            <h1 style="color: #186F65;">Wis<span style="color: white; width: 80px; height: 50px; border-radius: 100px; background-color: #308177;">Bre</span></h1>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; margin-right: 20px;">
+                <li style="margin-right: 20px;"><a style="text-decoration: none;  font-weight: bold; font-size: 20px;">Home</a></li>
+                <li style="margin-right: 20px;"><a href="#tentang" style="text-decoration: none;  font-weight: bold; font-size: 20px;">Tentang</a></li>
+                <li style="margin-right: 20px;"><a href="#tiket" style="text-decoration: none;  font-weight: bold; font-size: 20px;">Kategori</a></li>
+                
+                
+                <!-- <li  style="margin-right: 20px;">Tentang</li>
+                <li style="margin-right: 20px;">Tiket</li>
+                <li style="margin-right: 20px;">Lokasi</li>
+                <li style="margin-right: 20px;">Kontak</li> -->
+            </ul>
+        </nav>
+        <div class="navbar-cover"></div>
+    </div>
+   
+
+    <header >
+        <div style="margin-bottom: 20px;">
+            <img src="assets/header.jpg" width="100%" height="600px"/>
+            <div class="card-head">
+                <h1 >Wisata Brebes</h1>
+            </div>
+            <div class="card-head-2">
+                <p >Capek kerja? Pikiran pusing? ayo jalan - jalan ke tempat wisata di brebes</p>
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="sec-tentang" id="tentang" >
+         <div class="container-img-tg">
+          <img src="assets/1.jpg" style="width: 200px; height: 200px; border-radius: 10px; position: relative; top: 50px; left: 50px; ">
+          <img src="assets/2.jpg" style="width: 200px; height: 200px; border-radius: 10px;">
+        </div> 
+        <div class="container-txt-tg">
+            <h1 style="color: #186F65; font-size: 28px;">Tentang</h1>
+            <p style="color: #186F65;">WisBres, merupakan sebuah platform yang menunjukan berbagai tempat wisata di brebes yang berada daerah pegunungan, pantai, dll. Wisbres menyediakan tempat wisata yang menabjubkan untuk kecocokan kalian semua</p>
+        </div>
+       
+    </div>
+ 
+    <section id="kategori" class="container-kg">
+        <h1 style="color: #186F65; margin: 20">Kategori</h1>
+    <div style="display: flex; justify-content: center;">
+        <div class="card-kg" style="background-image: url(assets/gunung.png);">
+            <h1>Pegunungan</h1>
+        </div>
+        <div class="card-kg"  style="background-image: url(assets/kolamrn.jpg);" >
+            <h1>Kolam Renang</h1>
+        </div>
+        <div class="card-kg"  style="background-image: url(assets/pantai.jpg);" >
+            <h1>Pantai</h1>
+        </div>
+    </div>
+   
+    </section>
+<div style="margin: auto;   display: grid;
+place-items: center; margin: 20px;">
+    <h1>Daftar Tempat sering di kunjungin</h1>
+
+    <table>
+        <tr>
+          <th>Tempat</th>
+          <th>Lokasi</th>
+          <th>Jumlah Pengunjung</th>
+        </tr>
+        <tr>
+          <td>Mangrove Pandansari</td>
+          <td>Pandansari, Kaliwlingi, Brebes, Kabupaten Brebes, Jawa Tengah 52212</td>
+      <td>50.000</td>
+        </tr>
+        <tr>
+            <td>Ranto Canyon</td>
+          <td>Gunung Tajem, Windu Asri, Salem, Kabupaten Brebes, Jawa Tengah 52275</td>
+          <td>40.000</td>
+        </tr>
+        <tr>
+          <td>Kaligua</td>
+          <td>Jl. Kaligua, Sawah, Ladang, Kretek, Kecamatan Paguyangan, Kabupaten Brebes, Jawa Tengah 52276</td>
+          <td>30.000</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container-form">
+    <h1>Dapet informasi terbaru</h1>
+    <form >
+        <label style="display: block;" for="nama">Nama</label>
+        <input style="display: block;"type="text">
+       
+            <label style="display: block;" for="email">Email</label>
+            <input style="display: block;" type="email">
+    
+
+  
+  <input type="submit" class="btn-kirim" value="Kirim">
+    </form>
+</div>
+    <footer style="display: flex; justify-content: center; background-color: #186F65; ">
+        <h1 style="font-size: 16px; color: white;">Di buat oleh Arda yudrik malana : 22090121</h1>
+    </footer>
+</body>
+</html>
